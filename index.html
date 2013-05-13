@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Paint for Mohit</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<canvas class="canvas centerauto" id='paint' width="960" height="580"></canvas>
+
+
+
+<div id="profile" class="input">
+	<section id="btn" class="clickin menu">
+		<img src="../store/image/felesh.png" width="40px" height="40px" onclick="
+			if(document.getElementById('profile').className =='input'){
+				document.getElementById('profile').className='output';
+				document.getElementById('btn').className='clickout menu';
+			}else if(document.getElementById('profile').className =='output'){
+				document.getElementById('profile').className='input';
+				document.getElementById('btn').className='clickin menu';
+			}
+		" />
+	</section>
+
+</div>
+
+	<section class="color">
+		<menu class="colormenu">
+			<li class="multicolor"></li>
+			<li class="multicolor"></li>
+			<li class="multicolor"></li>
+			<li class="multicolor"></li>
+			<li class="multicolor"></li>
+		</menu>
+	</section>
+	
+
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>	
