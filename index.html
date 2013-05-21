@@ -4,25 +4,26 @@
 	<meta charset="UTF-8" />
 	<title>Paint for Mohit</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" src="script/mail.js" ></script>
-
+  <script type="text/javascript" src="script/zepto.js" ></script>
+  <script type="text/javascript" src="script/script.js"></script>
 </head>
 <body id="bodysite" class="timeout bgnoise">
+
 	<canvas class="canvas centerauto" id='paint' width="960" height="580"></canvas>
 
   <div class="container">
     <section class="contact btn">Contact</section>
     <section class="formdesign">
       <h2>Contact Us ...</h2>
-      <form action="mail.php" method="post">
+      <form id="contact-form" action="mail.php" method="post">
         <label class="lbl">Name:</label>
-        <input class="name nameicon" type="text" name="name" placeholder="Name" data-tooltip="You're email will be kept strictly confidential and will never be shared with anyone." /><br />
+        <input class="name nameicon" type="text" name="name" id="name" placeholder="Name" data-tooltip="You're email will be kept strictly confidential and will never be shared with anyone." /><br />
         <label class="lbl">Email:</label>
-        <input class="name mailicon" type="text" name="mail" placeholder="Email" /><br />
+        <input class="name mailicon" type="text" name="mail" id="mail" placeholder="Email" /><br />
         <label class="lbl">Subject:</label>
-        <input class="name texticon" type="text" name="subject" placeholder="Subject" /><br />
+        <input class="name texticon" type="text" name="subject" id="subject" placeholder="Subject" /><br />
         <label class="lbl">Message:</label>
-        <textarea class="name texticon" name="txt" placeholder="Text" ></textarea><br />
+        <textarea class="name texticon" name="txt" id="txt" placeholder="Text" ></textarea>
         <input class="btn" type="submit" name="sub" value="Send Message" />
         <input class="btn" type="reset" name="reset" value="Reset" />
       </form>
@@ -32,14 +33,44 @@
 
   <div class="switcher">
       <menu class="switch">
-         <li class="brdbbb" onclick="squares();"><img src='image/background/squares.jpg' /></li>
-         <li class="brd333" onclick="bgnoise();"><img src='image/background/bgnoise.jpg' /></li>
-         <li class="brdbbb" onclick="white_carbon();"><img src='image/background/white_carbon.png' /></li>
-         <li class="brdbbb" onclick="lghtmesh();"><img src='image/background/lghtmesh.jpg' /></li>
-         <li class="brdbbb" onclick="white_carbonfiber();"><img src='image/background/white_carbonfiber.png' /></li>
+         <li onclick="squares();"><img src='image/background/squares.jpg' /></li>
+         <li onclick="bgnoise();"><img src='image/background/bgnoise.jpg' /></li>
+         <li onclick="white_carbon();"><img src='image/background/white_carbon.png' /></li>
+         <li onclick="lghtmesh();"><img src='image/background/lghtmesh.jpg' /></li>
+         <li onclick="white_carbonfiber();"><img src='image/background/white_carbonfiber.png' /></li>
       </menu>
    </div>
 
-	<script type="text/javascript" src="script/script.js"></script>
+
+
+
+
+<div class="color-box">
+  <li></li><li></li><li></li><li></li><li></li>
+  <div class="clear"></div>
+  <li></li><li></li><li></li><li></li>
+  <div class="clear"></div>
+  <li></li><li></li><li></li>
+  <div class="clear"></div>
+  <li></li><li></li><li></li><li></li><li></li><li></li>
+  <div class="clear"></div>
+  <li></li><li></li><li></li><li></li><li></li>
+  <div class="clear"></div>
+  <li></li>
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="script/canvas.js"></script>
+
 </body>
 </html>
