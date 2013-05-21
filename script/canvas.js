@@ -1,10 +1,9 @@
-var cnv = document.getElementById('paint');
-
-var ctx = cnv.getContext('2d');
+var
+	cnv = document.getElementById('paint'),
+	ctx = cnv.getContext('2d'),
+	painting = false;
 
 ctx.strokeStyle = 'black';
-
-var painting = false;
 
 cnv.onmousemove = function (event){
 	if(painting){
@@ -22,6 +21,8 @@ cnv.onmousedown=function(event){
 	ctx.moveTo(x,y);
 	painting = true;
 }
+
+
 
 cnv.onmouseup=function(){
 	painting = false;
