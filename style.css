@@ -17,10 +17,20 @@
 }
 
 .canvas{
-  background-color: gray;
+  background-color: #FFF;
 	-webkit-border-radius:5px;
   border-radius:5px;
 	border:1px solid #050505;
+  -webkit-transition: all 300ms;
+   -moz-transition: all 300ms ;
+    -ms-transition: all 300ms ;
+     -o-transition: all 300ms ;
+        transition: all 300ms ;
+}
+/*Size Box*/
+
+menu.sizebox li{
+  background-color:black;
 }
 
 /*Color Box*/
@@ -30,11 +40,11 @@
   left : 0;
   top:20%;
   width: 180px;
-  height: 270px;
+  min-height: 270px;
   background-color: #aaa;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  padding: 3px;
+  padding: 10px;
 }
 
 .color-box li {
