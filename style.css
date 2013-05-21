@@ -17,7 +17,7 @@
 }
 
 .canvas{
-	background-color:#FFF;
+  background-color: gray;
 	-webkit-border-radius:5px;
   border-radius:5px;
 	border:1px solid #050505;
@@ -29,8 +29,8 @@
   position : absolute;
   left : 0;
   top:20%;
-  width: 200px;
-  height: 400px;
+  width: 180px;
+  height: 270px;
   background-color: #aaa;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -39,15 +39,14 @@
 
 .color-box li {
   display: block;
-  width: 20px;
-  height: 15px;
+  width: 30px;
+  height: 25px;
   list-style: none;
   text-decoration: none;
   float : left;
   margin: 2px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  background-color: #ddd;
   opacity: 0.7;
   cursor: pointer;
   -webkit-transition: all 300ms ease-in-out;
@@ -57,14 +56,100 @@
           transition: all 300ms ease-in-out;
 }
 
-.color-box li:hover,
-.color-box li.active {
+.color-box li:hover{
   opacity: 1;
-  background-color: #FFF;
+}
+
+.color-box h2{
+  margin:15px 0 10px;
+  color:#666;
+  font-size:22px;
+  text-shadow:0 1px 2px #999;
+  letter-spacing:2px;
+  font-weight:bold;
 }
 
 .clear{clear:both;display:block;width:0 !important;height:0 !important;min-height:0 !important;min-width:0 !important;margin:0 !important;padding:0 !important;overflow:hidden}
 
+.black{
+  background-color:black;
+}
+
+.white{
+  background-color:white;
+}
+
+.gray{
+  background-color:gray;
+}
+
+.yellow{
+  background-color:yellow;
+}
+
+.magenta{
+  background-color:magenta;
+}
+
+.red{
+  background-color:red;
+}
+
+.blue{
+  background-color:blue;
+}
+
+.green{
+  background-color:green;
+}
+
+.darkorange{
+  background-color:darkorange;
+}
+
+.pink{
+  background-color:pink;
+}
+
+.Crimson{
+  background-color:Crimson;
+}
+
+.Lime{
+  background-color:Lime;
+}
+
+.DeepPink{
+  background-color:DeepPink;
+}
+
+.BlueViolet{
+  background-color:BlueViolet;
+}
+
+.SlateBlue{
+  background-color:SlateBlue;
+}
+
+.DeepSkyBlue{
+  background-color:DeepSkyBlue;
+}
+
+.SlateGray{
+  background-color:SlateGray;
+}
+
+.Maroon{
+  background-color:Maroon;
+}
+
+.Chocolate{
+  background-color:Chocolate;
+}
+
+.darkmagenta{
+  background-color:darkmagenta;
+}
 
 /*Contact Page style*/
 
