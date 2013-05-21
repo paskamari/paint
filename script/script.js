@@ -1,20 +1,77 @@
-//background image
-(function(){
-	"use strickt";
-var
-	switcher = querySelectorAll('.switch li'),
-	setClass = function(){
-		switcher.item(i).addClass("brdbbb");
-		this.removeClass("brdbbb");
-		switcher.item(i).removeClass("brd333");
-		this.addClass("brd333");
-	};
-alert(switcher);
+//Contact Validation
 
-for(i = 0;i < switcher.lenght;i++){
-	switcher.item(i).click = alert(1);
+function validateText(str,len){
+	return str.length >= len;
 }
 
+function validateEmail(str){
+	var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i ;
+
+	return emailPattern.test(str);
+}
+
+$(function(){
+	$('#contact-form').submit(function(){
+		var target, err = false;
+
+		target = $('#name');
+		if( validateText(target.val(),3) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#subject');
+		if( validateText(target.val(),5) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#mail');
+		if( validateEmail(target.val()) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#txt');
+		if( validateText(target.val(),10) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		return !err;
+
+	});
+});
+
+//Contact Slide
+
+$(function(){
+	var closeform = $('.container .formdesign .close'),
+		formdesign = $('.container .formdesign'),
+		contact = $('.container .contact');
+	closeform.click(function(){
+		contact.animate({opacity:1},200);
+		formdesign.animate({
+			top:-800
+		},700);
+	});
+	contact.click(function(){
+		$(this).animate({opacity:0},500);
+		formdesign.animate({
+			top:-10
+		},700);
+	});
+});
+
+//background image
 
 function squares() {
 	document.getElementById('bodysite').className='timeout squares';
@@ -31,59 +88,3 @@ function lghtmesh() {
 function white_carbonfiber() {
 	document.getElementById('bodysite').className='timeout white_carbonfiber';
 }
-
-
-})();
-
-
-
-var cnv = document.getElementById('paint');
-
-var ctx = cnv.getContext('2d');
-
-ctx.strokeStyle = 'black';
-
-var painting = false;
-
-cnv.onmousemove = function (event){
-	if(painting){
-		var x = event.offsetX;
-		var y = event.offsetY;
-		ctx.lineTo(x,y);
-		ctx.stroke();
-	}
-};
-
-cnv.onmousedown=function(event){
-	var x = event.offsetX;
-	var y = event.offsetY;
-	ctx.beginPath();
-	ctx.moveTo(x,y);
-	painting = true;
-}
-
-cnv.onmouseup=function(){
-	painting = false;
-}
-
-/*
-// JavaScript Document
-$(function(){
-	var closeform = $('div.container div.formdesign .close'),
-		formdesign = $('div.container div.formdesign'),
-		contact = $('div.container a.contact');
-	closeform.click(function(){
-		contact.animate({opacity:1},200);
-		formdesign.animate({
-			top:-390
-		},500);
-	});
-	contact.click(function(){
-		$(this).animate({opacity:0},500);
-		formdesign.animate({
-			top:-10
-		},500);
-	});
-});
-
-*/
