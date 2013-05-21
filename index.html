@@ -15,7 +15,7 @@
     <section class="contact btn">Contact</section>
     <section class="formdesign">
       <h2>Contact Us ...</h2>
-      <form id="contact-form" action="mail.php" method="post">
+      <form id="contact-form" action="sendmail.php" method="post">
         <label class="lbl">Name:</label>
         <input class="name nameicon" type="text" name="name" id="name" placeholder="Name" data-tooltip="You're email will be kept strictly confidential and will never be shared with anyone." /><br />
         <label class="lbl">Email:</label>
@@ -45,48 +45,61 @@
 
     <div class="clear"></div>
 
-    <h2>Background</h2>
-
-    <menu>
-       <li class="black" onclick="changeBGC('black');"></li>
-       <li class="white" onclick="changeBGC('white');"></li>
-       <li class="gray" onclick="changeBGC('gray');"></li>
-    </menu>
-    <div class="clear"></div>
-
     <h2>Color Brushes</h2>
 
     <div class="clear"></div>
     <menu class="">
-       <li class="white" onclick="a = 'yellow';"></li>
-       <li class="magenta" onclick="();"></li>
-       <li class="red" onclick="();"></li>
-       <li class="blue" onclick="();"></li>
-       <li class="green" onclick="();"></li>
+       <li class="white" onclick="b = 'white';"></li>
+       <li class="magenta" onclick="b = 'magenta';"></li>
+       <li class="red" onclick="b = 'red';"></li>
+       <li class="blue" onclick="b = 'blue';"></li>
+       <li class="green" onclick="b = 'green';"></li>
     </menu>
     <div class="clear"></div>
     <menu class="">
-       <li class="black" onclick=""></li>
-       <li class="pink" onclick="();"></li>
-       <li class="gray" onclick="();"></li>
-       <li class="yellow" onclick="();"></li>
-       <li class="darkorange" onclick="();"></li>
+       <li class="black" onclick="b = 'black';"></li>
+       <li class="pink" onclick="b = 'pink';"></li>
+       <li class="gray" onclick="b = 'gray';"></li>
+       <li class="yellow" onclick="b = 'yellow';"></li>
+       <li class="darkorange" onclick="b = 'darkorange';"></li>
     </menu>
     <div class="clear"></div>
     <menu class="">
-       <li class="Crimson" onclick=""></li>
-       <li class="Lime" onclick="();"></li>
-       <li class="DeepPink" onclick="();"></li>
-       <li class="BlueViolet" onclick="();"></li>
-       <li class="SlateBlue" onclick="();"></li>
+       <li class="Crimson" onclick="b = 'Crimson';"></li>
+       <li class="Lime" onclick="b = 'Lime';"></li>
+       <li class="DeepPink" onclick="b = 'DeepPink';"></li>
+       <li class="BlueViolet" onclick="b = 'BlueViolet';"></li>
+       <li class="SlateBlue" onclick="b = 'SlateBlue';"></li>
     </menu>
     <div class="clear"></div>
     <menu class="">
-       <li class="DeepSkyBlue" onclick=""></li>
-       <li class="SlateGray" onclick="();"></li>
-       <li class="Maroon" onclick="();"></li>
-       <li class="Chocolate" onclick="();"></li>
-       <li class="darkmagenta" onclick="();"></li>
+       <li class="DeepSkyBlue" onclick="b = 'DeepSkyBlue';"></li>
+       <li class="SlateGray" onclick="b = 'SlateGray';"></li>
+       <li class="Maroon" onclick="b = 'Maroon';"></li>
+       <li class="Chocolate" onclick="b = 'Chocolate';"></li>
+       <li class="darkmagenta" onclick="b = 'darkmagenta';"></li>
+    </menu>
+    <div class="clear"></div>
+
+    <h2>Eraser</h2>
+    <menu>
+       <li class="white" onclick="b = 'white';"></li>
+    </menu>
+    <div class="clear"></div>
+
+    <h2>Brushes Size</h2>
+    <div class="clear"></div>
+    <menu class="sizebox">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
     </menu>
     <div class="clear"></div>
 
