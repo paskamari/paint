@@ -1,3 +1,5 @@
+var b = 'black';
+
 //BackGrounColor Canvas
 
 function changeBGC(bgc){
