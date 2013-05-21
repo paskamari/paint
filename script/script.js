@@ -1,3 +1,11 @@
+//BackGrounColor Canvas
+
+function changeBGC(bgc){
+	var canvas = document.getElementById('paint');
+	canvas.style.backgroundColor = bgc;
+}
+
+
 //Contact Validation
 
 function validateText(str,len){
